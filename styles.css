@@ -1,0 +1,9 @@
+/* || Global styles */
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-violet: hsl(257, 40%, 49%);
+  --color-soft-magenta: hsl(301, 70%, 71%);
+  --color-bright-magenta: hsl(322, 100%, 66%);
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
