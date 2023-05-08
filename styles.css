@@ -13,3 +13,11 @@ body {
   color: var(--color-white);
   font-family: var(--body-font);
 }
+
+/* || Page styles */
+.page {
+  padding: 2.3875rem 2.4375rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
