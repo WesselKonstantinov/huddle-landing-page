@@ -15,11 +15,11 @@ body {
 }
 
 /* || Page styles */
-.page {
+/* .page {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-}
+} */
 
 /* || Page header and logo styles */
 .header {
@@ -30,4 +30,37 @@ body {
   width: 7.5rem;
   height: 1.1875rem;
   object-fit: cover;
+}
+
+/* || Main section styles  */
+.main-section {
+  text-align: center;
+  padding: 0 2.25rem;
+}
+
+.main-section__image {
+  margin-bottom: 3.75rem;
+  padding: 0 0.25rem;
+}
+
+.main-section__title {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.main-section__text {
+  margin-bottom: 1.5rem;
+}
+
+.main-section__cta {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-violet);
+  box-shadow: 0.0625rem 0.1875rem 0.3125rem hsla(0, 0%, 0%, 0.27);
+  text-decoration: none;
+  border-radius: 1.25rem;
+  font-size: 0.75rem;
+  padding: 0.6875rem 4.71875rem;
 }
