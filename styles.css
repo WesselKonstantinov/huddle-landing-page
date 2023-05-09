@@ -36,6 +36,7 @@ body {
 .main-section {
   text-align: center;
   padding: 0 2.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .main-section__image {
@@ -63,4 +64,30 @@ body {
   border-radius: 1.25rem;
   font-size: 0.75rem;
   padding: 0.6875rem 4.71875rem;
+}
+
+/* || Page footer and social links styles */
+.footer {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-links {
+  display: flex;
+  gap: 0.65625rem;
+}
+
+.footer__social-link {
+  display: inline-block;
+  border: 0.8px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.footer__social-icon {
+  width: 27.5px;
+  height: 28px;
+  fill: var(--color-white);
+  vertical-align: middle;
+  transform: scale(0.5);
 }
