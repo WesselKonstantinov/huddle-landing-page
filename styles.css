@@ -14,13 +14,6 @@ body {
   font-family: var(--body-font);
 }
 
-/* || Page styles */
-/* .page {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-} */
-
 /* || Page header and logo styles */
 .header {
   padding: 2.3875rem 2.5rem;
