@@ -10,6 +10,9 @@
 
 body {
   background-color: var(--color-violet);
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   color: var(--color-white);
   font-family: var(--body-font);
 }
@@ -29,27 +32,33 @@ body {
 .main-section {
   text-align: center;
   padding: 0 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
   margin-bottom: 1.5rem;
 }
 
 .main-section__image {
-  margin-bottom: 3.75rem;
-  padding: 0 0.25rem;
+  margin: 0 0.25rem; /* Align the image with the header logo */
+}
+
+.main-section__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .main-section__title {
   font-family: var(--heading-font);
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 .main-section__text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .main-section__cta {
-  display: inline-block;
   background-color: var(--color-white);
   color: var(--color-violet);
   box-shadow: 0.0625rem 0.1875rem 0.3125rem hsla(0, 0%, 0%, 0.27);
@@ -57,6 +66,7 @@ body {
   border-radius: 1.25rem;
   font-size: 0.75rem;
   padding: 0.6875rem 4.71875rem;
+  align-self: center;
 }
 
 /* || Page footer and social links styles */
@@ -78,9 +88,84 @@ body {
 }
 
 .footer__social-icon {
-  width: 27.5px;
-  height: 28px;
+  width: 1.65625rem;
+  height: 1.6875rem;
   fill: var(--color-white);
   vertical-align: middle;
   transform: scale(0.5);
+}
+
+@media (min-width: 31.25rem) {
+  .main-section__image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 60.25rem) {
+  body {
+    background-image: url("images/bg-desktop.svg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 70rem) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .header {
+    padding: 4rem 5rem;
+  }
+
+  .header__logo {
+    width: 12.5rem;
+    height: 2rem;
+  }
+
+  .main-section {
+    text-align: left;
+    padding: 0 5rem;
+    flex-direction: row;
+    gap: 3.6875rem;
+    margin: 2.5rem 0 0;
+  }
+
+  .main-section__image {
+    margin: 0;
+  }
+
+  .main-section__info {
+    align-self: center;
+    gap: 1.5rem;
+  }
+
+  .main-section__title {
+    font-size: 2.5rem;
+  }
+
+  .main-section__cta {
+    align-self: flex-start;
+    font-size: inherit;
+    border-radius: 1.75rem;
+    padding: 0.90625rem 4rem;
+  }
+
+  .footer {
+    justify-content: flex-end;
+    padding: 1.6875rem 5rem 2.5rem;
+  }
+
+  .footer__social-links {
+    gap: 1rem;
+  }
+
+  .footer__social-link {
+    border-width: 1.18px;
+  }
+
+  .footer__social-icon {
+    width: 2.375rem;
+    height: 2.375rem;
+  }
 }
