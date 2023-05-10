@@ -17,6 +17,11 @@ body {
   font-family: var(--body-font);
 }
 
+a:focus-visible {
+  outline: 0.2rem dotted var(--color-bright-magenta);
+  outline-offset: 0.2rem;
+}
+
 /* || Page header and logo styles */
 .header {
   padding: 2.3875rem 2.5rem;
@@ -67,6 +72,14 @@ body {
   font-size: 0.75rem;
   padding: 0.6875rem 4.71875rem;
   align-self: center;
+  transition: all 0.3s ease-out 0s;
+}
+
+.main-section__cta:hover,
+.main-section__cta:focus-visible {
+  background-color: var(--color-soft-magenta);
+  color: var(--color-white);
+  box-shadow: 0.125rem 0.25rem 0.5625rem 0.1875rem hsla(0, 0%, 0%, 0.26);
 }
 
 /* || Page footer and social links styles */
@@ -85,6 +98,7 @@ body {
   display: inline-block;
   border: 0.8px solid var(--color-white);
   border-radius: 50%;
+  transition: all 0.15s ease-in-out 0s;
 }
 
 .footer__social-icon {
@@ -93,6 +107,17 @@ body {
   fill: var(--color-white);
   vertical-align: middle;
   transform: scale(0.5);
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus-visible {
+  border-color: var(--color-bright-magenta);
+  transform: scale(1.1);
+}
+
+.footer__social-link:hover .footer__social-icon,
+.footer__social-link:focus-visible .footer__social-icon {
+  fill: var(--color-bright-magenta);
 }
 
 @media (min-width: 31.25rem) {
