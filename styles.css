@@ -120,6 +120,7 @@ a:focus-visible {
   fill: var(--color-bright-magenta);
 }
 
+/* || Media queries */
 @media (min-width: 31.25rem) {
   .main-section__image {
     max-width: 80%;
