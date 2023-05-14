@@ -27,6 +27,12 @@ a:focus-visible {
 /* || Page header and logo styles */
 .header {
   padding: 2.3875rem 2.5rem;
+  margin-bottom: 1.975rem;
+}
+
+.header__inner {
+  max-width: 80rem;
+  margin-inline: auto;
 }
 
 .header__logo {
@@ -38,15 +44,16 @@ a:focus-visible {
 /* || Main section styles  */
 .main-section {
   text-align: center;
-  padding: 0 2.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3.75rem;
+  padding: 0 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.main-section__image {
-  margin: 0 0.25rem; /* Align the image with the header logo */
+.main-section__inner {
+  max-width: 80rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
 }
 
 .main-section__info {
@@ -66,6 +73,7 @@ a:focus-visible {
 }
 
 .main-section__cta {
+  font-family: var(--heading-font);
   background-color: var(--color-white);
   color: var(--color-violet);
   box-shadow: 0.0625rem 0.1875rem 0.3125rem hsla(0, 0%, 0%, 0.27);
@@ -86,6 +94,11 @@ a:focus-visible {
 /* || Page footer and social links styles */
 .footer {
   padding: 2.5rem;
+}
+
+.footer__inner {
+  max-width: 80rem;
+  margin-inline: auto;
   display: flex;
   justify-content: center;
 }
@@ -120,13 +133,6 @@ a:focus-visible {
 }
 
 /* || Media queries */
-@media (min-width: 31.25rem) {
-  .main-section__image {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: 60.25rem) {
   body {
     background-image: url("../images/bg-desktop.svg");
@@ -134,13 +140,14 @@ a:focus-visible {
   }
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 90rem) {
   body {
     font-size: 1.125rem;
   }
 
   .header {
-    padding: 4rem 5rem;
+    padding: 4rem 0;
+    margin-bottom: 2.5rem;
   }
 
   .header__logo {
@@ -150,23 +157,26 @@ a:focus-visible {
 
   .main-section {
     text-align: left;
-    padding: 0 5rem;
-    flex-direction: row;
-    gap: 3.6875rem;
-    margin: 2.5rem 0 0;
+    padding: 0;
+    margin-bottom: 0;
   }
 
-  .main-section__image {
-    margin: 0;
+  .main-section__inner {
+    flex-direction: row;
+    gap: 3.6875rem;
   }
 
   .main-section__info {
-    align-self: center;
+    margin-top: 2.5rem;
     gap: 1.5rem;
   }
 
   .main-section__title {
     font-size: 2.5rem;
+  }
+
+  .main-section__text {
+    margin-bottom: 0;
   }
 
   .main-section__cta {
@@ -177,8 +187,11 @@ a:focus-visible {
   }
 
   .footer {
+    padding: 1.6875rem 0 2.5rem;
+  }
+
+  .footer__inner {
     justify-content: flex-end;
-    padding: 1.6875rem 5rem 2.5rem;
   }
 
   .footer__social-links {
