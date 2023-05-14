@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 /* || Global styles */
 :root {
   --color-white: hsl(0, 0%, 100%);
@@ -10,7 +12,7 @@
 
 body {
   background-color: var(--color-violet);
-  background-image: url("images/bg-mobile.svg");
+  background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   color: var(--color-white);
@@ -130,7 +132,7 @@ a:focus-visible {
 
 @media (min-width: 60.25rem) {
   body {
-    background-image: url("images/bg-desktop.svg");
+    background-image: url("../images/bg-desktop.svg");
     background-size: cover;
   }
 }
