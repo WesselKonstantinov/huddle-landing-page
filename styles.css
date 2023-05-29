@@ -88,7 +88,7 @@ select {
 
 body {
   background-color: var(--color-violet);
-  background-image: url("../images/bg-mobile.svg");
+  background-image: url("images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   color: var(--color-white);
@@ -212,7 +212,7 @@ a:focus-visible {
 @media (min-width: 44.5rem) {
   body {
     font-size: 1.125rem;
-    background-image: url("../images/bg-desktop.svg");
+    background-image: url("images/bg-desktop.svg");
     background-size: cover;
   }
 
